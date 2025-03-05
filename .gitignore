@@ -1,7 +1,7 @@
 # Project specific
 
-results/*
-!results/.gitkeep
+src/results/*
+!src/results/.gitkeep
 
 
 

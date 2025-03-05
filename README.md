@@ -11,3 +11,11 @@ docker build -t car-modelling .
 ```bash
 docker run -v $(pwd):/usr/src/app -it car-modelling bash
 ```
+
+## Tests
+
+Running tests
+
+```bash
+pytest tests/
+```
