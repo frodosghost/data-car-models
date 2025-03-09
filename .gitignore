@@ -2,6 +2,8 @@
 
 src/results/*
 !src/results/.gitkeep
+data/*
+!data/.gitkeep
 .DS_Store
 .idea
 
