@@ -9,3 +9,9 @@ class OpenF1(BaseAPI):
 
     def session_list(self, year: int, type: str) -> Any:
         return self._get("sessions", {"year": year, "session_type": type})
+
+    def driver_list(self, session: int) -> Any:
+        return self._get("drivers", {"session_key": session})
+
+    def get(self, endpoint: str, params: Dict[str, Any]) -> Any:
+        return self._get(f"{endpoint}", params)
