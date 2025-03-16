@@ -32,7 +32,7 @@ def create_timeseries(session_key, meeting_key, driver_number):
         session_year = pd.to_datetime(session_data.get("date_start")).year
         country_code = session_data.get("country_code", "unknown")
         session_name = session_data.get("session_name", "session").replace(" ", "_")
-        output_file = f"./data/{session_year}_{country_code}_{session_name}_{driver_number}.csv"
+        output_file = f"./data/{session_year}_{country_code}_{session_name}_{driver_number}_lap.csv"
 
     df_laps = pd.DataFrame(laps_data)
     df_pits = pd.DataFrame(pits_data)
